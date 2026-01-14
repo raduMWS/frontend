@@ -1,3 +1,4 @@
+/*
 import React, { useState } from 'react';
 import { LoginCredentials } from '../types/admin';
 
@@ -44,3 +45,4 @@ const Login: React.FC<LoginProps> = ({ onLogin }) => {
 };
 
 export default Login;
+*/

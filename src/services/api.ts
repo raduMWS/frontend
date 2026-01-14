@@ -1,3 +1,4 @@
+/*
 import axios from 'axios';
 import { OfferDTO, OfferCategory, DietaryType } from '../types/offer';
 import { Product, Offer, Restaurant } from '../types/admin';
@@ -60,3 +61,4 @@ export const adminService = {
 };
 
 export default api;
+*/

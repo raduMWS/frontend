@@ -1,3 +1,4 @@
+/*
 import React, { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import OfferCard from '../components/OfferCard';
@@ -107,3 +108,4 @@ const HomeScreen: React.FC = () => {
 };
 
 export default HomeScreen;
+*/

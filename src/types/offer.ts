@@ -1,3 +1,4 @@
+/*
 export enum OfferCategory {
   BAKERY = 'BAKERY',
   RESTAURANT = 'RESTAURANT',
@@ -48,3 +49,4 @@ export interface OfferDTO {
   merchantRating?: number;
   distanceKm?: number;
 }
+*/

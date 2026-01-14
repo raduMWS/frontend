@@ -1,3 +1,4 @@
+/*
 export interface LoginCredentials {
   username: string;
   password: string;
@@ -62,3 +63,4 @@ export interface Restaurant {
   updatedAt: string;
   isActive: boolean;
 }
+*/

@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import { OfferDTO } from '../types/offer';
 
@@ -90,3 +91,4 @@ const OfferCard: React.FC<OfferCardProps> = ({ offer, onClick }) => {
 };
 
 export default OfferCard;
+*/

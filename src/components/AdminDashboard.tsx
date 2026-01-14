@@ -1,3 +1,4 @@
+/*
 import React, { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { adminService } from '../services/api';
@@ -114,3 +115,4 @@ const AdminDashboard: React.FC = () => {
 };
 
 export default AdminDashboard;
+*/

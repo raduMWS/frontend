@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import Login from './components/Login';
-import AdminDashboard from './components/AdminDashboard';
+// import Login from './components/Login';
+// import AdminDashboard from './components/AdminDashboard';
 import { LoginCredentials } from './types/admin';
 import './App.css';
 
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {isLoggedIn ? <AdminDashboard /> : <Login onLogin={handleLogin} />}
+      {isLoggedIn ? <div>Admin Dashboard (commented out)</div> : <div>Login (commented out)</div>}
     </QueryClientProvider>
   );
 }
