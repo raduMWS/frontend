@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import Login from './components/Login';
+import AdminDashboard from './components/AdminDashboard';
+import { LoginCredentials } from './types/admin';
 import './App.css';
 
+const queryClient = new QueryClient();
+
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = (credentials: LoginCredentials) => {
+    if (credentials.username === 'radu' && credentials.password === 'radu') {
+      setIsLoggedIn(true);
+    } else {
+      alert('Invalid credentials');
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      {isLoggedIn ? <AdminDashboard /> : <Login onLogin={handleLogin} />}
+    </QueryClientProvider>
   );
 }
 
